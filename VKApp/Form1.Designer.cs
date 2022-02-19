@@ -33,7 +33,9 @@
             this.ResponseRichTextBox = new System.Windows.Forms.RichTextBox();
             this.AvatarPictureBox = new System.Windows.Forms.PictureBox();
             this.GroupNameLabel = new System.Windows.Forms.Label();
+            this.UserDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // IdTextBox
@@ -61,7 +63,7 @@
             // 
             this.ResponseRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ResponseRichTextBox.Location = new System.Drawing.Point(646, 45);
+            this.ResponseRichTextBox.Location = new System.Drawing.Point(646, 76);
             this.ResponseRichTextBox.Name = "ResponseRichTextBox";
             this.ResponseRichTextBox.Size = new System.Drawing.Size(603, 472);
             this.ResponseRichTextBox.TabIndex = 2;
@@ -74,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AvatarPictureBox.Location = new System.Drawing.Point(12, 76);
             this.AvatarPictureBox.Name = "AvatarPictureBox";
-            this.AvatarPictureBox.Size = new System.Drawing.Size(628, 441);
+            this.AvatarPictureBox.Size = new System.Drawing.Size(628, 472);
             this.AvatarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AvatarPictureBox.TabIndex = 3;
             this.AvatarPictureBox.TabStop = false;
@@ -91,11 +93,22 @@
             this.GroupNameLabel.TabIndex = 4;
             this.GroupNameLabel.Text = "GroupNameLabel";
             // 
+            // UserDataGridView
+            // 
+            this.UserDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UserDataGridView.Location = new System.Drawing.Point(12, 554);
+            this.UserDataGridView.Name = "UserDataGridView";
+            this.UserDataGridView.RowHeadersWidth = 51;
+            this.UserDataGridView.RowTemplate.Height = 29;
+            this.UserDataGridView.Size = new System.Drawing.Size(628, 446);
+            this.UserDataGridView.TabIndex = 5;
+            // 
             // Vkontakte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 529);
+            this.ClientSize = new System.Drawing.Size(1257, 1012);
+            this.Controls.Add(this.UserDataGridView);
             this.Controls.Add(this.GroupNameLabel);
             this.Controls.Add(this.AvatarPictureBox);
             this.Controls.Add(this.ResponseRichTextBox);
@@ -104,6 +117,7 @@
             this.Name = "Vkontakte";
             this.Text = "ВКонтакте";
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +130,6 @@
         private RichTextBox ResponseRichTextBox;
         private PictureBox AvatarPictureBox;
         private Label GroupNameLabel;
+        private DataGridView UserDataGridView;
     }
 }
